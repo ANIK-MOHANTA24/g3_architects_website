@@ -11,18 +11,26 @@
 /* common shared stayle */
 
 /* common_h3 */
-.common_p{
+.common_h3{
   color:#131313;
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 .common_p{
   color: #727272;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
-
+.common_btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #FF900E;
+  border: 0px;
+}
 /* Header Style */
 header{
   background: rgba(255, 144, 14, 0.10);
@@ -49,9 +57,43 @@ nav li {
   margin: 0 auto;
   padding: 0 150px;
 }
+.banner_content_title{
+  color:#131313;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
 .banner img {
   padding-top: 2rem;
   width: 100%;
+}
+
+/* For main section */
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* teams_style */
+.teams_container{
+  display: flex;
+  align-items: center;
+}
+.teams_img_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams_content{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.common_h3 .opening{
+  color: #727272;
+  font-weight: 500;
+
+}
+.common_h3 .ending{
+  color: #FF900E;
 }
 
 
