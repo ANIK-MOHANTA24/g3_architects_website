@@ -31,7 +31,7 @@
 }
 /* Header Style */
 header {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 140px;
 }
@@ -114,10 +114,10 @@ main {
 /* facts section  */
 .Facts_container {
   padding: 100px 140px;
-  border: 1px solid mediumseagreen;
+  /* border: 1px solid mediumseagreen; */
 }
 .card_container {
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -127,6 +127,7 @@ main {
 .card {
   max-width: 1920px;
   max-height: 200px;
+  margin: 0 auto;
   border-radius: 8px;
   border: 1px solid #ff900e;
   padding: 30px 40px;
@@ -143,7 +144,27 @@ main {
   font-size: 20px;
   font-weight: 600;
 }
-
+/* Sponspors section */
+.Sponspors {
+  margin: 50px 140px;
+  /* border: 1px solid navy; */
+  text-align: center;
+  justify-content: center;
+}
+.Sponspors_logo {
+  margin-top: 50px;
+  /* margin-bottom: 130px; */
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+}
+.Sponspors_logo li {
+  max-width: 166.757px;
+  /* max-height: 50px;
+  flex-shrink: 0; */
+}
 /* Responsive for mobile device */
 @media (max-width: 576px) {
   header {
@@ -171,6 +192,22 @@ main {
     padding: 0;
     height: auto;
   }
+  .Facts_container {
+    padding: 50px;
+  }
+  .card_container {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .Sponspors {
+    margin: 50px;
+  }
+  .Sponspors_logo {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
 }
 
 /* Responsive for tablate device */
@@ -188,5 +225,10 @@ main {
   .teams_content {
     padding: 0;
     height: auto;
+  }
+  .Sponspors_logo {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
 }
